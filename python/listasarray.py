@@ -33,3 +33,8 @@ print(cars)
 cars.sort()
 
 print(cars)
+
+i = 0
+while i < len(cars):
+    print(cars[i])
+    i += 1

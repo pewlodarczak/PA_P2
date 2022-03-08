@@ -11,8 +11,14 @@ anArray.insert(0,15)
 for x in anArray:
     print(x)
 
-# del anArray[3]
+print(anArray)
+del anArray[3]
 
 print(anArray)
+
+i = 0
+while i < len(anArray):
+    print(anArray[i])
+    i += 1
 
 print(anArray.__sizeof__())

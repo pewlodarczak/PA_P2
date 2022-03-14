@@ -18,7 +18,7 @@ print(char_arr)
 BubbleSort(char_arr)
 
 # print(str(ord('f')) + " " + str(ord('e')))
-"""
+
 char_arr.sort(reverse=True)
 print(char_arr)
-"""
+

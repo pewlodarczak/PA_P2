@@ -1,7 +1,6 @@
 cars = ["Tesla", "Ferrari", "Maseratti", "Lamborghini", "Ferrari"]
 aCar = "Ferrari1"
 
-
 i = 0
 for x in cars:
     if x == aCar:
@@ -11,8 +10,7 @@ for x in cars:
 for x in cars:
     if x == aCar:
         print('Found: ' + aCar + ' ' + str(cars.index(aCar)))
-'''
-'''
+
 indx = 0
 try:
     indx = cars.index(aCar)
@@ -21,11 +19,12 @@ except Exception as e:
     print("Entry not found.")
     print()
 print('Found: ' + aCar + ' ' + str(indx))
+index = cars.index(aCar)
+cars.sort()
+print(index)
+print(cars)
 
 '''
-
-
-
 def find(aCar, cars):
     global indx
     try:
@@ -39,3 +38,4 @@ def find(aCar, cars):
         
 find(aCar, cars)
 print('Found: ' + aCar + ' ' + str(indx))
+'''

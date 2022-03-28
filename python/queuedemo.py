@@ -3,7 +3,6 @@ def QueueDemo():
     queue.append('a')
     queue.append('b')
     queue.append('c')
-    queue.append('d')
 
     print("Initial queue")
     print(queue)

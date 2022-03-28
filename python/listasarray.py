@@ -3,6 +3,11 @@ print(type(cars))
 print(cars[2]) # prints Maseratti
 cars[2] = 'Lamborghini' # Overwrites Maseratti
 
+for c in cars:
+    if c == 'Ferrari':
+        break
+    print('Found you: ' + c)
+
 person = ['John', 'Do', 45]
 print(person)
 person.reverse()

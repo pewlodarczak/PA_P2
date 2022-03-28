@@ -1,6 +1,6 @@
 from queue import Queue
  
-aQueue = Queue(maxsize=3)
+aQueue = Queue(maxsize=4)
 
 def QueueDemo():
     
@@ -12,6 +12,7 @@ def QueueDemo():
     print("\nFull: ", aQueue.full())
  
     print("\nElements dequeued from the queue")
+    print(aQueue.get())
     print(aQueue.get())
     print(aQueue.get())
     print(aQueue.get())

@@ -19,7 +19,7 @@ def buildTree(height):
    i = 0
    spaces = height - 2
    tmpSpc = spaces
-   stars = 1
+   stars = 0
    tmpStrs = stars
    while i < height:
       line = ''
@@ -30,20 +30,20 @@ def buildTree(height):
          line += ' '
          spaces -= 1
       while stars < tmpStrs + 1:
-         line += '*'
          stars += 1
       
       tmpStrs = stars
       stars += 1
-      print('stars ' + str(stars))
-      print('tmpstars ' + str(tmpStrs))
+      #print('stars ' + str(stars))
+      #print('tmpstars ' + str(tmpStrs))
       indx += 1
       tmpSpc -= 1
       spaces = tmpSpc
-      #line += '*'
+      line += '*'
       print(line)
       i += 1
 
 height = input("Enter hight: ")
+print()
 height = int(height)
 buildTree(height)

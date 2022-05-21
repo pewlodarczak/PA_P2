@@ -10,6 +10,7 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    
     def __repr__(self):
         node = self.head
         nodes = []
@@ -18,14 +19,25 @@ class LinkedList:
             node = node.next
         nodes.append("None")
         return " -> ".join(nodes)
+    
+    def __iter__(self):
+        node = self.head
+        while node is not None:
+            yield node
+            node = node.next
 
 llist = LinkedList()
+print(llist)
 
-first_node = Node('a')
+first_node = Node("a")
+llist.head = first_node
+print(llist)
+
 second_node = Node("b")
 third_node = Node("c")
-llist.head = first_node
 first_node.next = second_node
 second_node.next = third_node
 print(llist)
 
+llist = LinkedList(["a", "b", "c", "d", "e"])
+#print(llist)

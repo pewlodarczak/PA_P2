@@ -1,20 +1,14 @@
-# Recursive function to return gcd of a and b
 def gcd(a, b):
-	if a == 0 :
-		return b
-	
-	return gcd(b%a, a)
+    if a == 0:
+        return b
+    else:
+        while b != 0:
+            if a > b:
+                a = a - b
+            else:
+                b = b - a
+    return a
 
-a = 10
-b = 15
+a = 44
+b = 12
 print("gcd(", a , "," , b, ") = ", gcd(a, b))
-
-a = 35
-b = 10
-print("gcd(", a , "," , b, ") = ", gcd(a, b))
-
-a = 31
-b = 2
-print("gcd(", a , "," , b, ") = ", gcd(a, b))
-
-# Code Contributed By Mohit Gupta_OMG <(0_o)>

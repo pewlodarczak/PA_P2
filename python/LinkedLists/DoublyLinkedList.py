@@ -45,16 +45,21 @@ class DoublyLinkedList:
 
     def goBack(self):
         if self.head == None:
-            print('Empty List')
-            return
+            # print('Empty List')
+            return 'Empty List'
         
-        last = self.head
-        while (last.next):
-            last = last.next
-        print(last.previous)
+        #last = self.head
+        #while (last.next):
+        #    last = last.next
+        # print(last.previous)
         
-        #print(self.currentNode.previous)
-        #self.currentNode = self.currentNode.previous
+        # print(self.currentNode.previous)
+        self.currentNode = self.currentNode.previous
+        return self.currentNode
+        # print(self.currentNode)
+
+    def goForward(self):
+        return self.currentNode.next
 
 
 

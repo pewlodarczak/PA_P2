@@ -17,9 +17,9 @@ if __name__ == '__main__':
     print(dll)
     openLink('Quantum Physics')
     print(dll)
-    # dll.goBack()
+    print(dll.goBack())
     openLink('Higgs Boson')
     print(dll)
-    # dll.goBack()
-    # dll.goBack()
+    print(dll.goBack())
+    print(dll.goBack())
 

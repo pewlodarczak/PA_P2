@@ -1,6 +1,7 @@
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, song, path):
+        self.data = song
+        self.path = path
         self.next = None
 
     def __repr__(self):
@@ -18,12 +19,14 @@ class LinkedList:
             node = node.next
         nodes.append("None")
         return " -> ".join(nodes)
-
+    
+    def playNextSong():
+        pass
 
 llist = LinkedList()
 
-first_node = Node('Merkur')
-second_node = Node("Venus")
+first_node = Node('Beeth', 'c:\music\sym9.mp3')
+second_node = Node("Moz")
 third_node = Node("Erde")
 forth_node = Node("Mars")
 llist.head = first_node

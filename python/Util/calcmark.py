@@ -1,5 +1,5 @@
 def calcMark(points):
-    max = 20
+    max = 25
     quot = 5
     print((points + (max/quot))/(max/quot))
 

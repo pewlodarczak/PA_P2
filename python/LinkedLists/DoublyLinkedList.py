@@ -36,7 +36,7 @@ class DoublyLinkedList:
         last = self.head
         while (last.next):
             last = last.next
-            #print('last ' + str(last))
+            # print('last ' + str(last))
         NewNode.previous = last
         last.next = NewNode
         # print('last ' + str(last.next))

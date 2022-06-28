@@ -8,6 +8,9 @@ def openLink(url):
 def navigateBack():
     dll.goBack()
 
+def navigateForward():
+    dll.goForward()
+
 if __name__ == '__main__':
     print(dll)
     print('Open URL slashdot.org')
@@ -22,4 +25,5 @@ if __name__ == '__main__':
     print(dll)
     print(dll.goBack())
     print(dll.goBack())
+    print(dll.goForward())
 
